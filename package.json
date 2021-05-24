@@ -3,7 +3,8 @@
   "scripts": {
     "test:coveralls": "npm test && npm coveralls",
     "test": "jest --coverage",
-    "coveralls": "coveralls < coverage/lcov.info"
+    "coveralls": "coveralls < coverage/lcov.info",
+    "build": "tsc"
   },
   "author": "Hones SAS <contact+tech@hones.fr> (https://hones.fr/)",
   "license": "MIT",
@@ -11,6 +12,15 @@
     "url": "https://github.com/hones-dev/array-filter-utils/issues"
   },
   "homepage": "https://github.com/hones-dev/array-filter-utils",
+  "prepublish": "tsc",
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/filter.js",
+    "dist/filter.d.ts"
+  ],
+  "main": "filter.js",
+  "types": "filter.d.ts",
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "coveralls": "^3.1.0",
