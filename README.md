@@ -3,7 +3,9 @@
 `array-filter-utils` is a library offering a bulk of functions to filter arrays with type
 management.
 
-# Usage
+[![Coverage Status](https://coveralls.io/repos/github/hones-dev/array-filter-utils/badge.svg?branch=develop)](https://coveralls.io/github/hones-dev/array-filter-utils?branch=develop)
+
+## Usage
 
 ```
 npm install array-filter-utils
@@ -18,9 +20,9 @@ const result = array.filter(isSet);
 // typeof result == Array<number>
 ```
 
-# Examples
+## Examples
 
-## `array.filter(requiredIsSet)`
+### `array.filter(requiredIsSet)`
 
 return true if element is set
 
@@ -44,7 +46,7 @@ expect(result).toStrictEqual([
 ]);
 ```
 
-## `array.filter(requiredIsNotNullable)`
+### `array.filter(requiredIsNotNullable)`
 
 return true if element is set and not null
 
@@ -63,7 +65,7 @@ const result = test_array.filter(requiredIsNotNullable("key"));
 expect(result).toStrictEqual([{ key: "valid" }, { key: 0 }, { key: false }]);
 ```
 
-## `array.filter(isSet)`
+### `array.filter(isSet)`
 
 remove undefined elements
 
@@ -75,7 +77,7 @@ const result = testArray.filter(isSet);
 expect(result).toStrictEqual(["valid", null, 0, false]);
 ```
 
-## `array.filter(notNullable)`
+### `array.filter(notNullable)`
 
 remove null and undefined elements
 
