@@ -3,7 +3,11 @@
 `array-filter-utils` is a library offering a bulk of functions to filter arrays with type
 management.
 
-[![Coverage Status](https://coveralls.io/repos/github/hones-dev/array-filter-utils/badge.svg?branch=develop)](https://coveralls.io/github/hones-dev/array-filter-utils?branch=develop)
+![GitHub](https://img.shields.io/github/license/hones-dev/array-filter-utils)
+![Coveralls](https://img.shields.io/coveralls/github/hones-dev/array-filter-utils)
+![GitHub tag checks state](https://img.shields.io/github/checks-status/hones-dev/array-filter-utils/develop)
+![npm](https://img.shields.io/npm/v/array-filter-utils)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/hones-dev/array-filter-utils)
 
 ## Usage
 

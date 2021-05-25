@@ -1,5 +1,6 @@
 {
   "name": "array-filter-utils",
+  "version": "0.1.0",
   "scripts": {
     "build": "tsc",
     "coveralls": "coveralls < coverage/lcov.info",
@@ -15,6 +16,12 @@
     "url": "https://github.com/hones-dev/array-filter-utils/issues"
   },
   "homepage": "https://github.com/hones-dev/array-filter-utils",
+  "keywords": [
+    "array",
+    "filter",
+    "typescript",
+    "ts"
+  ],
   "prepublish": "tsc",
   "files": [
     "filter.js",
@@ -29,5 +36,7 @@
     "ts-jest": "^26.5.6",
     "typescript": "^4.2.4"
   },
-  "version": "0.1.0"
+  "engines": {
+    "node": ">=10 <16"
+  }
 }
