@@ -1,10 +1,15 @@
 {
   "name": "array-filter-utils",
+  "version": "0.1.0",
   "scripts": {
-    "test:coveralls": "npm test && npm coveralls",
-    "test": "jest --coverage",
+    "build": "tsc",
     "coveralls": "coveralls < coverage/lcov.info",
-    "build": "tsc"
+    "prepublish": "npm run build",
+    "release:patch": "npm version patch && git push && git push --tags",
+    "release:minor": "npm version minor && git push && git push --tags",
+    "release:major": "npm version major && git push && git push --tags",
+    "test": "jest --coverage",
+    "test:coveralls": "npm test && npm coveralls"
   },
   "author": "Hones SAS <contact+tech@hones.fr> (https://hones.fr/)",
   "license": "MIT",
@@ -12,12 +17,15 @@
     "url": "https://github.com/hones-dev/array-filter-utils/issues"
   },
   "homepage": "https://github.com/hones-dev/array-filter-utils",
-  "prepublish": "tsc",
+  "keywords": [
+    "array",
+    "filter",
+    "typescript",
+    "ts"
+  ],
   "files": [
-    "dist/index.js",
-    "dist/index.d.ts",
-    "dist/filter.js",
-    "dist/filter.d.ts"
+    "filter.js",
+    "filter.d.ts"
   ],
   "main": "filter.js",
   "types": "filter.d.ts",
@@ -27,5 +35,8 @@
     "jest": "^26.6.3",
     "ts-jest": "^26.5.6",
     "typescript": "^4.2.4"
+  },
+  "engines": {
+    "node": ">=10 <17"
   }
 }
