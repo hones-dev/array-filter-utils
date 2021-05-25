@@ -1,9 +1,10 @@
 {
   "name": "array-filter-utils",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "scripts": {
     "build": "tsc",
     "coveralls": "coveralls < coverage/lcov.info",
+    "prepublish": "npm build",
     "release:patch": "npm version patch && git push && git push --tags",
     "release:minor": "npm version minor && git push && git push --tags",
     "release:major": "npm version major && git push && git push --tags",
@@ -22,7 +23,6 @@
     "typescript",
     "ts"
   ],
-  "prepublish": "tsc",
   "files": [
     "filter.js",
     "filter.d.ts"
