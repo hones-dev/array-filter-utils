@@ -17,10 +17,8 @@
   "homepage": "https://github.com/hones-dev/array-filter-utils",
   "prepublish": "tsc",
   "files": [
-    "dist/index.js",
-    "dist/index.d.ts",
-    "dist/filter.js",
-    "dist/filter.d.ts"
+    "filter.js",
+    "filter.d.ts"
   ],
   "main": "filter.js",
   "types": "filter.d.ts",

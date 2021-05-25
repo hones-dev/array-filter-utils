@@ -66,4 +66,5 @@ typings/
 *.tgz
 
 # Compile
-dist
+*.js
+*.d.ts
