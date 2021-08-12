@@ -3,8 +3,9 @@
  * management.
  */
 
-type WithRequired<T, K extends keyof T> = Omit<T, K> & Required<Pick<T, K>>;
-type WithNonNullable<T, K extends keyof T> = Omit<T, K> &
+export type WithRequired<T, K extends keyof T> = Omit<T, K> &
+  Required<Pick<T, K>>;
+export type WithNonNullable<T, K extends keyof T> = Omit<T, K> &
   Record<K, NonNullable<T[K]>>;
 
 /**
