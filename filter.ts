@@ -9,33 +9,33 @@ export type WithNonNullable<T, K extends keyof T> = Omit<T, K> &
   Record<K, NonNullable<T[K]>>;
 
 /**
- * filter function to check if the object key is defined
+ * filter function to check if the object keys are defined
  *
  * ```ts
- * const array: Array<{key?: string}> = [{}, {key: "ok"}]
- * const result: Array<{key: string}> = array.filter(requiredIsSet('key')) // [{key: "ok"}]
+ * const array: Array<{keys?: string}> = [{}, {keys: "ok"}]
+ * const result: Array<{keys: string}> = array.filter(requiredIsSet('keys')) // [{keys: "ok"}]
  * ```
- * @param key key of the filter element to check
- * @returns a function to use in filter returning true if the row's key isSet
+ * @param keys keys of the filter element to check
+ * @returns a function to use in filter returning true if the row's keys are setSet
  */
-export function requiredIsSet<T, K extends keyof T>(key: K) {
+export function requiredIsSet<T, K extends keyof T>(...keys: K[]) {
   return (row: T | WithRequired<T, K>): row is WithRequired<T, K> =>
-    isSet(row[key]);
+    keys.every((key) => isSet(row[key]));
 }
 
 /**
- * filter function to check if the object key is defined and not null
+ * filter function to check if the object keys are defined and not null
  *
  * ```ts
- * const array: Array<{key?: string}> = [{}, {key: null}, {key: "ok"}]
- * const result: Array<{key: string}> = array.filter(requiredIsNotNullable('key')) // [{key: "ok"}]
+ * const array: Array<{keys?: string}> = [{}, {keys: null}, {keys: "ok"}]
+ * const result: Array<{keys: string}> = array.filter(requiredIsNotNullable('keys')) // [{keys: "ok"}]
  * ```
- * @param key key of the filter element to check
- * @returns a function to use in filter returning true if the row's key is notNullable
+ * @param keys keys of the filter element to check
+ * @returns a function to use in filter returning true if the row's keys is notNullable
  */
-export function requiredIsNotNullable<T, K extends keyof T>(key: K) {
+export function requiredIsNotNullable<T, K extends keyof T>(...keys: K[]) {
   return (row: T | WithNonNullable<T, K>): row is WithNonNullable<T, K> =>
-    notNullable(row[key]);
+    keys.every((key) => notNullable(row[key]));
 }
 
 /**
