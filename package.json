@@ -1,6 +1,6 @@
 {
   "name": "array-filter-utils",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "scripts": {
     "build": "tsc",
     "coveralls": "coveralls < coverage/lcov.info",
