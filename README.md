@@ -4,10 +4,11 @@
 management.
 
 [![License](https://img.shields.io/github/license/hones-dev/array-filter-utils)](https://github.com/hones-dev/array-filter-utils/blob/develop/LICENSE)
-[![Coveralls](https://img.shields.io/coveralls/github/hones-dev/array-filter-utils)](https://coveralls.io/github/hones-dev/array-filter-utils)
-[![GitHub tag checks state](https://img.shields.io/github/checks-status/hones-dev/array-filter-utils/develop)](https://github.com/hones-dev/array-filter-utils/actions/workflows/tests.yml?query=branch%3Adevelop)
-[![npm](https://img.shields.io/npm/v/array-filter-utils)](https://www.npmjs.com/package/array-filter-utils)
-[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/hones-dev/array-filter-utils)](https://github.com/hones-dev/array-filter-utils/releases/latest)
+[![Coveralls](https://img.shields.io/coveralls/github/hones-dev/array-filter-utils?logo=coveralls&logoColor=white)](https://coveralls.io/github/hones-dev/array-filter-utils)
+[![GitHub tag checks state](https://img.shields.io/github/checks-status/hones-dev/array-filter-utils/develop?logo=githubactions&logoColor=white
+)](https://github.com/hones-dev/array-filter-utils/actions/workflows/tests.yml?query=branch%3Adevelop)
+[![npm](https://img.shields.io/npm/v/array-filter-utils?logo=npm&logoColor=white)](https://www.npmjs.com/package/array-filter-utils)
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/hones-dev/array-filter-utils?logo=github&logoColor=white)](https://github.com/hones-dev/array-filter-utils/releases/latest)
 
 ## Usage
 
